@@ -1,0 +1,42 @@
+=========================
+Unit tests are modular by nature.
+They test the public API of one member of your application, and mock out the behaviour of other members.
+
+Therefore when writing unit tests, even in a language as unmodular in design as J, the modular nature of large applications should be supported in test.
+=========================
+When a test runs, it should be clear:
+
+- The name of the test
+- Whether it passed or failed
+
+When a test fails, it should be clear:
+
+- Exactly which assertion failed
+- The precise difference between the expected value(s) and the actual value(s)
+
+When a test passes, it should be clear:
+
+- It did pass
+=========================
+How I'd expect to write a simple test in J:
+
+  canPushItemOntoStack = 3 : 0
+stack =: 0
+push 1 2 3
+stack shouldEqual 1 2 3 0
+)
+
+NB. On pass:
+
+  canPushItemOntoStack
+canPushItemOntoStack: PASS
+
+NB. On failure:
+  canPushItemOntoStack
+canPushItemOntoStack: FAIL
+  Expected: <1 2 3 0>
+  Got:      <3 2 1 0>
+
+And for modularity, maybe something like:
+
+stackTest =: |: (canPushItemOntoStack , canDropItemOffStack , canAddTopTwoItemsOnStack)
