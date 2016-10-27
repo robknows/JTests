@@ -20,7 +20,7 @@ When a test passes, it should be clear:
 =========================
 How I'd expect to write a simple test in J:
 
-  canPushItemOntoStack = 3 : 0
+  canPushItemOntoStack = 0 : 0
 stack =: 0
 push 1 2 3
 stack shouldEqual 1 2 3 0
@@ -37,6 +37,9 @@ canPushItemOntoStack: FAIL
   Expected: <1 2 3 0>
   Got:      <3 2 1 0>
 
-And for modularity, maybe something like:
+And for modularity, maybe some tool that runs functions of a certain name: eg:
 
-stackTest =: |: (canPushItemOntoStack , canDropItemOffStack , canAddTopTwoItemsOnStack)
+  runTests 'canPushItemOntoStack' 'canDropItemOffStack' 'canClearStack'
+canPushItemOntoStack: PASS
+canDropItemOffStack: PASS
+canClearStack: PASS
