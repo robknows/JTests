@@ -13,7 +13,7 @@ push =: 3 : 'stack =: y , stack' 	NB. Pushes items of y onto the stack
 drop =: 3 : 'stack =: y }. stack' 	NB. Drops y items from the stack
 ```
 
-I can test it by writing a test, which is a thing, it is a noun:
+I can test it by writing a test, which is a noun, as indicated by the first "0" in 0 : 0:
 
 
 ```J
