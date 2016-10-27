@@ -7,23 +7,18 @@ Shame that JUnit was already taken as a name
 
 If I have some code I want to test such as:
 
-`stack =: 0
-
-push =: 3 : 'stack =: y , stack' 	NB. Pushes items of y onto the stack
-
-drop =: 3 : 'stack =: y }. stack' 	NB. Drops y items from the stack`
+`stack =: 0`
+`push =: 3 : 'stack =: y , stack' 	NB. Pushes items of y onto the stack`
+`drop =: 3 : 'stack =: y }. stack' 	NB. Drops y items from the stack`
 
 I can test it by writing a test, which is a thing, it is a noun:
 
 
-`  canPushToStack =: 0 : 0
-
-stack =: 0            NB. reset the stack
-
-push 1                NB. push a 1 onto the stack
-
-stack shouldEqual 1 0 NB. make the appropriate assertion
-)`
+`  canPushToStack =: 0 : 0`
+`stack =: 0            NB. reset the stack`
+`push 1                NB. push a 1 onto the stack`
+`stack shouldEqual 1 0 NB. make the appropriate assertion`
+`)`
 
 To compute the result of the test, I can call the function runTests:
 
