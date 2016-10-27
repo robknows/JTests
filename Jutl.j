@@ -1,6 +1,3 @@
-NB. DoubleCarriageReturn, aka Two newlines
-  DCR =: CR , CR
-
 NB. Function whose calls are generated, does the execution of each test
   doTest =: 0 !: 1
 
@@ -8,7 +5,7 @@ NB. Generates a single test call
   generateSingleTestCall =: > @: {
 
 NB. Generates code for running the tests
-  generateTestCode =: (generateSingleTestCall)~ i.@:#)
+  generateTestCode =: (generateSingleTestCall)~ i.@:#
 
 NB. Usage: runTests testOne ; testTwo ; testThree ; testFour ...
   runTests =: doTest @: generateTestCode
