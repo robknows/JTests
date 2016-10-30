@@ -8,6 +8,7 @@ NB. Generates code for running the tests
   generateTestCode =: (generateSingleTestCall)~ i.@:#
 
 NB. Usage: runTests testOne ; testTwo ; testThree ; testFour ...
+NB. Tests are strings of the code for a test, they are scripts
   runTests =: doTest @: generateTestCode
 
 NB. Provides a single 1 or 0 for equality when used on higher dimension inputs.
