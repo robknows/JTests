@@ -43,3 +43,19 @@ And for modularity, maybe some tool that runs functions of a certain name: eg:
 canPushItemOntoStack: PASS
 canDropItemOffStack: PASS
 canClearStack: PASS
+=========================
+A good build has a few features:
+
+It tells you:
+Which files/artifacts have been loaded/assembled
+Whether the tests passed or failed
+If the build passed or failed, and if it failed, at what stage it failed.
+Which version is being built
+The dependencies that have been loaded
+
+Additional features:
+
+It may also tell you:
+How long it took
+Who ran it
+What changes there were from the last build
