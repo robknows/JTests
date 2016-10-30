@@ -1,15 +1,11 @@
 # Jutl
-J Unit Testing Library - Jutl
-
-Shame that JUnit was already taken as a name
-
-In fact, I'm aspiring to make this a repo containing the things that I wish J came with "out of the box" such as:
+A set of J development tools that I wish J came with "out of the box" such as:
 
 - Functions for testing
-- A dressing up of modularising multi-file programs
-- An IDE
+- Functions for loading and linking J files into the interpreter
+- An IDE with nice syntax highlighting and maybe even precompilation to indicate bad domain errors and rank errors
 
-# Usage for testing functions: Jutl.ijs
+# Usage for testing functions: found in Jutl.ijs
 
 If I have some code I want to test such as:
 
@@ -40,7 +36,7 @@ If I have many other tests, one of which is called canDropItemsOffStack, I can r
 
 Note that the results of the test are not evaluated until they are called upon by the runTests function.
 
-# Usage for building functions: Jbuild.ijs
+# Usage for building functions: found in Jbuild.ijs
 
 Consider if I have a J project in a folder called /home/rob/myJProject and in it I have my J files which are main.ijs, matrices.ijs and graphics.ijs
 
