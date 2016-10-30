@@ -3,7 +3,13 @@ J Unit Testing Library - Jutl
 
 Shame that JUnit was already taken as a name
 
-# Usage
+In fact, I'm aspiring to make this a repo containing the things that I wish J came with "out of the box" such as:
+
+- Functions for testing
+- A dressing up of modularising multi-file programs
+- An IDE
+
+# Usage for testing functions: Jutl.ijs
 
 If I have some code I want to test such as:
 
@@ -33,3 +39,11 @@ If I have many other tests, one of which is called canDropItemsOffStack, I can r
 `runTests canPushToStack ; canDropItemsOffStack ; blah ; blah2 ; ...`
 
 Note that the results of the test are not evaluated until they are called upon by the runTests function.
+
+# Usage for building functions: Jbuild.ijs
+
+Consider if I have a J project in a folder called /home/rob/myJProject and in it I have my J files which are main.ijs, matrices.ijs and graphics.ijs
+
+To load all of the functions from my project into the interpreter, I can use the following command:
+
+`loadJProject ('/home/rob/myJProject/' withJFiles 'main.ijs' ; 'matrices.ijs' ; 'graphics.ijs')`
