@@ -5,6 +5,8 @@ A set of J development tools that I wish J came with "out of the box" such as:
 - Functions for loading and linking J files into the interpreter
 - An IDE with nice syntax highlighting and maybe even precompilation to indicate bad domain errors and rank errors
 
+I say it like "util". Pronouncability is an important feature of names. "Jew-tol" or "Juttle" are alternatives I can think of off the top of my head. 
+
 # Usage for testing functions: found in Jutl.ijs
 
 If I have some code I want to test such as:
