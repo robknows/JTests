@@ -5,7 +5,7 @@ NB. All of the J files we're using
 jfiles =: 'Jutl.ijs' ; 'Jbuild.ijs'
 
 NB. Prepends the first argument to every member of the second
-withJFiles =: 4 : '> x&, each y'
+withJFiles =: 4 : '(x&,"1) @: > y'
 
 NB. Loads all the J files given all of their paths
 loadJProject =: load @: ,
