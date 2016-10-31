@@ -3,9 +3,8 @@ A set of J development tools that I wish J came with "out of the box" such as:
 
 - Better dressed functions for testing
 - Better dresesd functions for loading and linking J files into the interpreter
-- An IDE with nice syntax highlighting that integrates with the testing and building features. Maybe even with version control integration? I'm thinking too far ahead again
 
-I say it like "util". Pronouncability is an important feature of names. "Jew-tol" or "Juttle" are alternatives I can think of off the top of my head. 
+(I have recently discovered, that if you run jqt and in do view->editor you get a beauiful IDE for J)
 
 # Usage for testing functions: found in Jutl.ijs
 
