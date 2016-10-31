@@ -9,5 +9,3 @@ withJFiles =: 4 : '> x&, each y'
 
 NB. Loads all the J files given all of their paths
 loadJProject =: load @: ,
-
-a =: 4
