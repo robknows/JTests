@@ -2,7 +2,7 @@
 A set of J development tools that I wish J came with "out of the box" such as:
 
 - Better dressed functions for testing
-- Better dresesd functions for loading and linking J files into the interpreter
+- Better dressed functions for loading and linking J files into the interpreter
 
 (I have recently discovered, that if you run jqt and in do view->editor you get a beauiful IDE for J)
 
