@@ -4,7 +4,7 @@ A set of J development tools that I wish J came with "out of the box" such as:
 - Better dressed functions for testing
 - Better dressed functions for loading and linking J files into the interpreter
 
-(I have recently discovered, that if you run jqt and in do view->editor you get a beauiful IDE for J)
+(I have recently discovered, that if you run jqt and in do view->editor you get a beauiful IDE for J, and loading into the interpreter with it is quite nice, so I've sort of abandoned Jbuild.ijs)
 
 # Usage for testing functions: found in Jutl.ijs
 
