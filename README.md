@@ -1,8 +1,6 @@
 # Jutl
 Some better dressed testing functions for J
 
-(I have recently discovered, that if you run jqt and in do view->editor you get a beauiful IDE for J, and loading into the interpreter with it is quite nice, so I've sort of abandoned Jbuild.ijs)
-
 # Usage for testing functions: found in Jutl.ijs
 
 If I have some code I want to test such as:
