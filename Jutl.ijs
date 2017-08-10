@@ -14,9 +14,6 @@ NB. Tests are strings of the code for a test, they are scripts
 NB. Provides a single 1 or 0 for equality when used on higher dimension inputs.
   vectorEquals =: *./@:=
 
-NB. Always returns zero, regardless of input. Used to immediately fail tests when an error is thrown.
-  returnZero =: (0&[)
-
 NB. When an assertion fails, you should see the expected and actual results, somewhat formatted.
   failureMessage =: 4 : 0
 'FAIL' , CR , TAB , 'expected: ' , (": y) , CR , TAB , 'actual:   ' , (": x) , CR
@@ -24,7 +21,7 @@ NB. When an assertion fails, you should see the expected and actual results, som
 
 NB. Usage: expected shouldEqual actual.
   shouldEqual =: 4 : 0
-if. x (vectorEquals :: returnZero) y
+if. x (vectorEquals :: 0:) y
 do. 'PASS'
 else. x failureMessage y
 end.
