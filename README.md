@@ -15,10 +15,10 @@ I can test it by writing a test, which is a noun, as indicated by the first "0" 
 
 
 ```J
-  canPushToStack =: 0 : 0
-stack =: 0            NB. reset the stack
-push 1                NB. push a 1 onto the stack
-stack shouldEqual 1 0 NB. make the appropriate assertion
+canPushToStack =: 0 : 0
+  stack =: 0            NB. reset the stack
+  push 1                NB. push a 1 onto the stack
+  stack shouldEqual 1 0 NB. make the appropriate assertion
 )
 ```
 
