@@ -1,7 +1,7 @@
-# Jutl
-Some better dressed testing functions for J
+# JTests
+Some explicit testing functions for J
 
-# Usage for testing functions: found in Jutl.ijs
+# Usage for testing functions: found in JTests.ijs
 
 If I have some code I want to test such as:
 
